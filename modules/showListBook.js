@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 const bookList = document.querySelector('.book-list');
 
 const showListBook = () => {

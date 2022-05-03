@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import { showListBook } from './showListBook.js';
 
 const title = document.querySelector('.title');
