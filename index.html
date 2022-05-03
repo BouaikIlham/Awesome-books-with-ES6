@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Awesome books: with ES6</title>
 </head>
+
 <body>
-<script src="index.js"></script>    
+    <header class="content">
+        <nav class="nav-bar">
+            <h1 class="awesome-logo">Awesome books</h1>
+            <ul class="list-items">
+                <li><a href="#" id="listId">List</a></li>
+                <li><a href="#" id="addBookId">Add new</a></li>
+                <li><a href="#" id="contactId">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date">
+            <p id="date"></p>
+        </div>
+        <div class="showBook-section" id="showSection">
+            <h1 class="title1"> All awesome books</h1>
+            <div class="book-list">
+                <!-- Books added here -->
+            </div>
+        </div>
+        <div class="addBook-section" id="addSection">
+            <!-- <hr> -->
+            <h1 class="title2">Add a new book</h1>
+            <input type="text" class="title" placeholder="Title"> <br> <br>
+            <input type="text" class="author" placeholder="Author"> <br>
+            <button class="add-btn">Add</button>
+        </div>
+    </header>
+    <section class="contact-section" id="contanct">
+        <div class="contact-info">
+            <h2 class="contact-heading">Contact Information</h2>
+            <p class="contact-para">Do you have any questions or you just want to say "Hello"?. <br> You can reach out
+                to us!
+            </p>
+            <ul class="list">
+                <li>Our e-mail: mail@mail.com</li>
+                <li>Our Phone numbers :0043586534422</li>
+                <li>Our Address: Streetname 22, 84503 City, Country.</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="copyright">Copyright @ 2022</p>
+    </footer>
+    <script type="module" src="./index.js"></script>
+
 </body>
+
 </html>
