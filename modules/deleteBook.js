@@ -3,8 +3,9 @@ import { showListBook } from './showListBook.js';
 const deleteBook = (e) => {
   if (e.target.classList.contains('remove-btn')) {
     const id = e.target.attributes.id.value;
-    const filteredBooks = listBooks.filter((book) => book.id !== +id);
-    listbooks = JSON.parse(localStorage.getItem('books'));
+    const filteredBooks = JSON.parse(localStorage.getItem('books')).filter(
+      (book) => book.id !== +id,
+    );
     localStorage.setItem(
       'books',
       JSON.stringify(filteredBooks),
@@ -13,4 +14,5 @@ const deleteBook = (e) => {
   }
 };
 
+export default deleteBook;
 export { deleteBook };
