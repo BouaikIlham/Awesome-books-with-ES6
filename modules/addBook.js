@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import { showListBook } from './showListBook.js';
 
 const title = document.querySelector('.title');
@@ -30,5 +29,5 @@ const addBook = (e) => {
   showListBook();
   return true;
 };
-
+export default addBook;
 export { addBook };
