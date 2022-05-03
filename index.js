@@ -1,21 +1,13 @@
-import {addBook} from "./modules/addBook.js";
-import {showListBook} from "./modules/showListBook.js";
-import {deleteBook} from "./modules/deleteBook.js";
-
-
+import { addBook } from './modules/addBook.js';
+import { showListBook } from './modules/showListBook.js';
+import { deleteBook } from './modules/deleteBook.js';
 
 const addBtn = document.querySelector('.add-btn');
 const bookList = document.querySelector('.book-list');
 
-
-
-
 addBtn.addEventListener('click', addBook);
 bookList.addEventListener('click', deleteBook);
 document.addEventListener('DOMContentLoaded', showListBook);
-
-
-
 
 const listLinkId = document.getElementById('listId');
 const addBooksLinkId = document.getElementById('addBookId');
@@ -28,8 +20,6 @@ const contactSection = document.querySelector('.contact-section');
 showBookSection.style.display = 'block';
 addBookSection.style.display = 'none';
 contactSection.style.display = 'none';
-
-
 
 listLinkId.addEventListener('click', () => {
   showBookSection.style.display = 'block';

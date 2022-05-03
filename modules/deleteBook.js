@@ -1,5 +1,4 @@
-import {showListBook} from "./showListBook.js";
-
+import { showListBook } from './showListBook.js';
 
 const deleteBook = (e) => {
   if (e.target.classList.contains('remove-btn')) {
@@ -12,6 +11,6 @@ const deleteBook = (e) => {
     );
     showListBook();
   }
-}
+};
 
-export {deleteBook};
+export { deleteBook };
